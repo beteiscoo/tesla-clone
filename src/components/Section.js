@@ -28,7 +28,10 @@ function Section({img, title, description, ButtonTextL, ButtonTextR}) {
                         }
                     </div>
                 </Fade>
-                <ChevronDownIcon className='mx-60 text-white animate-bounce h-10 mt-5 '/>
+                <div className='flex justify-center items-center'>
+                    <ChevronDownIcon className='flex text-white h-10'/>
+                </div>
+
             </div>
         </div>
     )

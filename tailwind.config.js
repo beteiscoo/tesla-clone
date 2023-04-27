@@ -23,7 +23,14 @@ module.exports = {
       },
       padding: {
         '2.5': '.6125rem'
-      }
+      },
+      width: {
+        '75': '18.75rem'
+      },
+      zIndex: {
+        '100': '100'
+      },
+    
     },
   plugins: [],
 }
