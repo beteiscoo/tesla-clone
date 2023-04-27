@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ce27e32.css",
-    "main.js": "/static/js/main.bbe6e118.js",
-    "static/js/787.860837ff.chunk.js": "/static/js/787.860837ff.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
-    "index.html": "/index.html",
-    "main.1ce27e32.css.map": "/static/css/main.1ce27e32.css.map",
-    "main.bbe6e118.js.map": "/static/js/main.bbe6e118.js.map",
-    "787.860837ff.chunk.js.map": "/static/js/787.860837ff.chunk.js.map"
+    "main.css": "/beteiscoo/tesla-clone/static/css/main.c286ff3f.css",
+    "main.js": "/beteiscoo/tesla-clone/static/js/main.633a99fc.js",
+    "static/js/787.860837ff.chunk.js": "/beteiscoo/tesla-clone/static/js/787.860837ff.chunk.js",
+    "index.html": "/beteiscoo/tesla-clone/index.html",
+    "main.c286ff3f.css.map": "/beteiscoo/tesla-clone/static/css/main.c286ff3f.css.map",
+    "main.633a99fc.js.map": "/beteiscoo/tesla-clone/static/js/main.633a99fc.js.map",
+    "787.860837ff.chunk.js.map": "/beteiscoo/tesla-clone/static/js/787.860837ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ce27e32.css",
-    "static/js/main.bbe6e118.js"
+    "static/css/main.c286ff3f.css",
+    "static/js/main.633a99fc.js"
   ]
 }
