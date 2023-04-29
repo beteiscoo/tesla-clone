@@ -1,10 +1,14 @@
 import React, {useState, useTransition} from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Fade, LightSpeed } from 'react-reveal';
+import { selectCars } from '../features/car/carSlice';
+import { useSelector } from 'react-redux';
 
-    function Header() {
+function Header() {
         
         const [burgerStatus, setBurgerStatus] = useState(true);
+        const cars = useSelector(selectCars)
+        console.log(cars);
         const navState = () => {
             setBurgerStatus(!burgerStatus);
             console.log(burgerStatus);
@@ -37,19 +41,18 @@ import { Fade, LightSpeed } from 'react-reveal';
                 </a>
                 {/* menu */}
                 <div className='flex flex-1 items-center justify-center'>
-                    <a href="#" className='head'>Model S</a>
-                    <a href="#" className='head'>Model 3</a>
-                    <a href="#" className='head'>Model X</a>
-                    <a href="#" className='head'>Model Y</a>
+                    {cars && cars.map((car, index) =>(
+                        <a key={index} href="#" className='head'>Model S</a>
+                    ))}
                 </div>
                 {/* Right Menu */}
                 <div className='flex flex-row items-center justify-center'>
                     <a className='right-menu'>Shop</a>
                     <a className='right-menu'>Tesla Account</a>
-                    <Bars3Icon name="menu" onClick={navState} className='cursor-pointer h-8 rounded-lg p-0.5 hover:bg-gray-300 duration-300'/>
+                    <Bars3Icon onClick={navState} className='cursor-pointer h-8 rounded-lg p-0.5 hover:bg-gray-300 duration-300'/>
                 </div>
                 {/* Burger Navigation Bar */}
-                <div show={burgerStatus} style={{
+                <div style={{
                     visibility: burgerStatus ? 'hidden': 'visible'
                 }}
                 className='flex-col overflow-y-auto scrollbar-hide items-start fixed
