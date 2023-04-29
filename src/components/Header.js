@@ -37,7 +37,7 @@ function Header() {
         return (
             <div className='flex fixed items-center justify-between min-h-6 p-5 top-0 left-0 right-0 z-10'>
                 <a>
-                    <img className='h-5 w-50' src="https://www.pngmart.com/files/10/Tesla-Logo-PNG-HD.png" alt='Tesla Logo'></img>
+                    <img className='h-5 w-50' src="https://logos-world.net/wp-content/uploads/2020/10/Tesla-Emblem.png" alt='Tesla Logo'></img>
                 </a>
                 {/* menu */}
                 <div className='flex flex-1 items-center justify-center'>
