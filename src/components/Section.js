@@ -2,9 +2,10 @@ import React from 'react'
 import {ChevronDownIcon} from '@heroicons/react/24/outline'
 import Fade from 'react-reveal/Fade'
 
-function Section({img, title, description, ButtonTextL, ButtonTextR}) {
+function Section({vid, img, title, description, ButtonTextL, ButtonTextR}) {
   
     return (
+        
         <div className='h-full items-center w-full bg-cover bg-center bg-no-repeat flex flex-col justify-between'
             style={{
                 backgroundImage: `url(${img})`
@@ -31,7 +32,6 @@ function Section({img, title, description, ButtonTextL, ButtonTextR}) {
                 <div className='flex justify-center items-center'>
                     <ChevronDownIcon className='flex text-white h-10'/>
                 </div>
-
             </div>
         </div>
     )
